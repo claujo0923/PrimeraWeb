@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/menu.css" rel="stylesheet" type="text/css">    
+    <link href="./css/estilos.css" rel="stylesheet" type="text/css">   
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+           <li class="logo">
+                 <a href="#">
+                       <img src="./img/logo.png">
+                   </a>
+           </li>      
+           <li> <a href="./index.html">Inicio</a> </li>
+           <li> <a href="./contactenos.html">Contacto</a> </li>
+
+       </ul>
+   </nav>
+
+
+   <div>
+        <h1> Contacto con Rick and Morty</h1>
+        <div> <!--contener titulo y formulario-->
+            <form >
+                    <div> <!--contener secciones del formulario-->
+                        <div>
+                            <div> <!--contener el titulo de cada opcion-->
+                                <label > Tipo de Mensaje</label>
+                            </div>
+                                <select id="tipo" name="tipo" required >
+                                    <option value="">Seleccione una opcion</option> 
+                                    <option value="cotizacion">Cotizacion</option>
+                                    <option value="saludo">Saludo</option>
+                                    <option value="queja">Queja</option>
+                                </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label >Nombres</label>
+                    </div>
+                        <input type="text" id="name" minlength="4" maxlength="100" size="80" name="name" placeholder="Ingrese sus nombres"required><!--campo de datos tipado--> 
+             </div>
+
+                <div>
+                    <label >Email</label>   <!--control de etiquetado-->
+                </div>
+                    <input type="email" id="email" name="email" size="50" placeholder="Ingrese su correo"required>     
+            </div>
+
+                 <div>
+                     <label >Edad</label>
+             </div>
+                <input type="number" id="edad" name="edad"  placeholder="Ingrese su edad"required> 
+            </div>
+
+        <div>
+            <label >Telefono</label>
+             </div>
+       <input type="text" id="Telefono" name="Telefono"  placeholder="Ingrese su Telefono"required> 
+            </div>
+
+            <div>
+                <label >Comentarios</label>
+                 </div>
+                 <textarea id="comment" name="comment" cols="40" rows="4" placeholder="Escriba su comentario aqui"></textarea>
+                </div>
+
+            <div>
+                 <label >¿Que estudias?</label>
+                </div>
+                <input type="checkbox" id="chk1" name="chk1" value=""> HTML
+                <input type="checkbox" id="chk2" name="chk2" value=""> CSS
+                <input type="checkbox" id="chk3" name="chk3" value=""> PHP
+
+                 </div>
+
+                <div>
+                    <label >¿Que te gusta hacer?</label>
+                   </div>
+                   <input type="radio" id="radio1" name="radio" value="Jugar"> Jugar
+                   <input type="radio" id="radio2" name="radio" value="Programar"> Programar
+                   <input type="radio" id="radio3" name="radio" value="Leer"> Leer
+
+                </div>
+
+                   <div>
+                    <button type="submit" onclick="validardatos()">Enviar Datos</button> <!--submit permite que se validen los datos antes de enviar el formulario-->
+                   </div>
+
+
+
+                </div>
+            </form>
+        </div>
+
+
+   </div>
+
+   <footer> 
+    <p>Creado por Johanna Herrera </p>
+    <footer> 
+
+        <script src="./js/scrpt.js"></script><!--siempre va al final de la linea para que el javascript no sobrecargue la pagina-->
+
+</body>
+</html>
